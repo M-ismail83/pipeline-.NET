@@ -23,3 +23,10 @@ jobs:
 
       - name: Running Tests
         run: dotnet test --no-build --verbosity normal
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Artifacts
+          path: |
+            **/bin/Debug/net9.0/
