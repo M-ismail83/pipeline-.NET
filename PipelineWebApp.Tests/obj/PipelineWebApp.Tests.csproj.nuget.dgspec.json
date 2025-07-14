@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp\\PipelineWebApp.csproj": {}
+    "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp.Tests\\PipelineWebApp.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp\\PipelineWebApp.csproj": {
+    "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp.Tests\\PipelineWebApp.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp\\PipelineWebApp.csproj",
-        "projectName": "PipelineWebApp",
-        "projectPath": "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp\\PipelineWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp.Tests\\PipelineWebApp.Tests.csproj",
+        "projectName": "PipelineWebApp.Tests",
+        "projectPath": "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp.Tests\\PipelineWebApp.Tests.csproj",
         "packagesPath": "C:\\Users\\mahmu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp\\obj\\",
+        "outputPath": "C:\\Users\\mahmu\\OneDrive\\Masaüstü\\Git\\pipeline-.NET\\PipelineWebApp.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -47,8 +47,28 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.14.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,9 +81,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
