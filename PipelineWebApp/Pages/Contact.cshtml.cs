@@ -4,7 +4,7 @@ namespace MyFirstWebApp.Pages
 {
     public class ContactModel : PageModel
     {
-        public string Message { get; private set; }
+        public string Message { get; private set; } = string.Empty;
 
         public void OnPost(string name, string email)
         {
